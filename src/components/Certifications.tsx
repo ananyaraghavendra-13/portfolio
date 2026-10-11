@@ -12,23 +12,33 @@ export const Certifications: React.FC = () => {
           title="Verified learning"
         />
 
-        <div className="mx-auto mt-14 grid max-w-4xl gap-5 sm:grid-cols-2">
+        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {certificationsData.map((item) => (
             <div
               key={item.title}
-              className="reveal glass glass-hover rounded-3xl p-7"
+              className="reveal glass glass-hover flex flex-col justify-between rounded-3xl p-7"
             >
-              <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4">
-                <span className="grid size-11 place-items-center rounded-2xl border border-primary/25 bg-primary/10 text-primary">
-                  <BadgeCheck className="size-5" />
-                </span>
-                <span className="font-mono text-xs text-muted-foreground">
-                  {item.year}
-                </span>
+              <div>
+                <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4">
+                  <span className="grid size-11 place-items-center rounded-2xl border border-primary/25 bg-primary/10 text-primary">
+                    <BadgeCheck className="size-5" />
+                  </span>
+                  <span className="font-mono text-xs text-muted-foreground">
+                    {item.year}
+                  </span>
+                </div>
+
+                <h3 className="mt-5 text-base font-semibold leading-snug">{item.title}</h3>
+                <p className="mt-1.5 text-sm font-medium text-primary">{item.issuer}</p>
               </div>
 
-              <h3 className="mt-5 text-base font-semibold">{item.title}</h3>
-              <p className="mt-1.5 text-sm text-primary">{item.issuer}</p>
+              {item.credentialId && (
+                <div className="mt-4 border-t border-border/60 pt-3">
+                  <p className="font-mono text-[11px] text-muted-foreground truncate">
+                    ID: <span className="text-foreground/80">{item.credentialId}</span>
+                  </p>
+                </div>
+              )}
             </div>
           ))}
         </div>

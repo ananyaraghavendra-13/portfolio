@@ -33,6 +33,7 @@ export interface CertificationItem {
   title: string;
   issuer: string;
   year: string;
+  credentialId?: string;
 }
 
 export interface EducationItem {
@@ -200,14 +201,44 @@ export const capabilitiesData: CapabilityItem[] = [
 
 export const certificationsData: CertificationItem[] = [
   {
-    title: 'Artificial Intelligence Fundamentals',
-    issuer: 'IBM',
-    year: '2025',
+    title: 'Google Cloud Data Analytics Certificate',
+    issuer: 'Google',
+    year: 'Mar 2026',
   },
   {
-    title: 'Essentials Automation Certification',
+    title: 'AI Agents with MongoDB',
+    issuer: 'MongoDB',
+    year: 'Apr 2026',
+    credentialId: 'MDBgv8t7bivv9',
+  },
+  {
+    title: 'RAG with MongoDB',
+    issuer: 'MongoDB',
+    year: 'Apr 2026',
+    credentialId: 'MDB3x36e6zxmb',
+  },
+  {
+    title: 'Vector Search Fundamentals',
+    issuer: 'MongoDB',
+    year: 'Apr 2026',
+    credentialId: 'MDBk2887b2x7h',
+  },
+  {
+    title: 'AI Data Strategy with MongoDB',
+    issuer: 'MongoDB',
+    year: 'Apr 2026',
+    credentialId: 'MDBa6wrtgosyx',
+  },
+  {
+    title: 'Artificial Intelligence Fundamentals',
+    issuer: 'IBM',
+    year: 'Aug 2025',
+  },
+  {
+    title: 'Essentials Automation Certification - 2024',
     issuer: 'Automation Anywhere',
-    year: '2025',
+    year: 'Nov 2025',
+    credentialId: '167923989',
   },
 ];
 
