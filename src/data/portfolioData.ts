@@ -33,7 +33,6 @@ export interface CertificationItem {
   title: string;
   issuer: string;
   year: string;
-  credentialId?: string;
 }
 
 export interface EducationItem {
@@ -209,25 +208,21 @@ export const certificationsData: CertificationItem[] = [
     title: 'AI Agents with MongoDB',
     issuer: 'MongoDB',
     year: 'Apr 2026',
-    credentialId: 'MDBgv8t7bivv9',
   },
   {
     title: 'RAG with MongoDB',
     issuer: 'MongoDB',
     year: 'Apr 2026',
-    credentialId: 'MDB3x36e6zxmb',
   },
   {
     title: 'Vector Search Fundamentals',
     issuer: 'MongoDB',
     year: 'Apr 2026',
-    credentialId: 'MDBk2887b2x7h',
   },
   {
     title: 'AI Data Strategy with MongoDB',
     issuer: 'MongoDB',
     year: 'Apr 2026',
-    credentialId: 'MDBa6wrtgosyx',
   },
   {
     title: 'Artificial Intelligence Fundamentals',
@@ -238,7 +233,6 @@ export const certificationsData: CertificationItem[] = [
     title: 'Essentials Automation Certification - 2024',
     issuer: 'Automation Anywhere',
     year: 'Nov 2025',
-    credentialId: '167923989',
   },
 ];
 
