@@ -158,19 +158,6 @@ export const projectsData: ProjectItem[] = [
       'Predicts potential health risks from unsafe samples',
     ],
   },
-  {
-    index: '03',
-    title: 'Real-Time Invoice Automation — Smart India Hackathon 2025',
-    tag: 'Automation Prototype',
-    description: 'Designed a prototype for real-time invoice automation using OCR and a microservices architecture as part of Smart India Hackathon 2025.',
-    tech: ['OCR', 'Microservices'],
-    features: [
-      'OCR-based invoice information extraction',
-      'Microservices architecture',
-      'Real-world automation problem',
-      'Team collaboration under time constraints',
-    ],
-  },
 ];
 
 export const experienceData: ExperienceItem[] = [
@@ -180,12 +167,6 @@ export const experienceData: ExperienceItem[] = [
     meta: 'Bengaluru · 4-month internship',
     body: 'Working with the IT team as a junior developer intern, gaining practical industry experience in day-to-day software development.',
     current: true,
-  },
-  {
-    role: 'Smart India Hackathon 2025',
-    org: 'Team project experience',
-    meta: 'Real-time invoice automation',
-    body: 'Collaborated in a team on a real-time invoice automation prototype built around OCR and a microservices architecture.',
   },
 ];
 
@@ -254,7 +235,7 @@ export const educationData: EducationItem[] = [
 export const achievementsData: AchievementItem[] = [
   {
     iconName: 'trophy',
-    text: 'Smart India Hackathon 2025 participant',
+    text: 'Maintained 8.3 CGPA in Information Science & Engineering at Sai Vidya Institute of Technology',
   },
   {
     iconName: 'award',
@@ -262,6 +243,6 @@ export const achievementsData: AchievementItem[] = [
   },
   {
     iconName: 'sparkles',
-    text: 'Built 2+ technical projects spanning full-stack development, database management and machine learning',
+    text: 'Built technical projects spanning full-stack development, database management and machine learning',
   },
 ];
